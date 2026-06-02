@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    padding: 15px 0;
+}
+
+.navbar-brand{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.nav-link{
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #0d6efd !important;
+}
+
+/* Hero Section */
+#home{
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#home h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+#home h3{
+    margin: 15px 0;
+}
+
+#home p{
+    margin-bottom: 25px;
+}
+
+#home img{
+    max-width: 350px;
+    border: 5px solid white;
+}
+
+/* Sections */
+section{
+    padding: 100px 0;
+}
+
+section h2{
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+section h2::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #0d6efd;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Cards */
+.card{
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+/* Skills */
+#skills .card{
+    padding: 20px;
+}
+
+/* Projects */
+#projects img{
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Contact Form */
+form{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-control{
+    padding: 12px;
+}
+
+/* Buttons */
+.btn{
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+/* Footer */
+footer{
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 991px){
+
+    #home{
+        text-align: center;
+    }
+
+    #home img{
+        margin-top: 30px;
+    }
+
+    #home h1{
+        font-size: 2.7rem;
+    }
+}
+
+@media(max-width: 576px){
+
+    #home h1{
+        font-size: 2.2rem;
+    }
+
+    section{
+        padding: 70px 0;
+    }
+}
