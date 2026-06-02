@@ -42,10 +42,4 @@ if (contactForm) {
 
     });
 
-}
-
-// ==========================
-// Welcome Message
-// ==========================
-
-console.log("Welcome to Naeem Portfolio Website 🚀");
+};
